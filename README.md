@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [Authentication](#authentication)
 - [Scraping](#scraping)
+- [Instagram](#instagram)
 - [License](#license)
 
 ## Introduction
@@ -60,7 +61,61 @@ Required parameters: ```url``` (ip.smartproxy.com in this example)
   ]
 }
 ```
+## Instagram
 
+### Instagram Profile
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+
+### Response
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> Instagram page content</html>"
+      "status_code": 200,
+      "url": "https://www.instagram.com/eminem/",
+      "task_id": "6971440655478339585",
+      "created_at": "2022-09-02 12:16:15",
+      "updated_at": "2022-09-02 12:16:37"
+    }
+  ]
+}
+```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/instagrampost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/instagrampost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/instagrampost.py > instagrampost.py ``` |
+| PHP                 | [php/instagrampost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/instagrampost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/instagrampost.php > instagrampost.php ``` |
+| Node.js                 | [nodejs/instagrampost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/instagrampost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/instagrampost.js > instagrampost.js ``` |
+
+
+### Instagram Post
+
+```http
+
+{
+  "results": [
+    {
+      "content": "<html> Instagram page content</html>"
+      "status_code": 200,
+      "url": "https://www.instagram.com/p/Ch2hW9-JHTT/",
+      "task_id": "6971442143109891073",
+      "created_at": "2022-09-02 12:22:10",
+      "updated_at": "2022-09-02 12:22:30"
+    }
+  ]
+}
+```
 
 ## License
 
