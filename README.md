@@ -5,6 +5,8 @@
 - [Authentication](#authentication)
 - [Scraping](#scraping)
 - [Instagram](#instagram)
+- [Facebook](#facebook)
+- [TikTok](#tiktok)
 - [License](#license)
 
 ## Introduction
@@ -72,6 +74,7 @@ Required parameters: ```url```
 | :-------- | :------- | :------------------------- |
 | `url` | `url` |  Target URL |
 | `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
 
 ### Response
 
@@ -94,12 +97,24 @@ Required parameters: ```url```
 
 | Programming Language | Example location         | Download |
 | -------------------- | ------------------------ | -------- |
-| Python                  | [python/instagrampost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/instagrampost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/instagrampost.py > instagrampost.py ``` |
-| PHP                 | [php/instagrampost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/instagrampost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/instagrampost.php > instagrampost.php ``` |
-| Node.js                 | [nodejs/instagrampost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/instagrampost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/instagrampost.js > instagrampost.js ``` |
+| Python                  | [python/instagramprofile.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/instagramprofile.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/instagramprofile.py > instagramprofile.py ``` |
+| PHP                 | [php/instagramprofile.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/instagramprofile.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/instagramprofile.php > instagramprofile.php ``` |
+| Node.js                 | [nodejs/instagramprofile.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/instagramprofile.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/instagramprofile.js > instagramprofile.js ``` |
 
 
 ### Instagram Post
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
+
+
+### Response
 
 ```http
 
@@ -116,6 +131,195 @@ Required parameters: ```url```
   ]
 }
 ```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/instagrampost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/instagrampost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/instagrampost.py > instagrampost.py ``` |
+| PHP                 | [php/instagrampost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/instagrampost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/instagrampost.php > instagrampost.php ``` |
+| Node.js                 | [nodejs/instagrampost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/instagrampost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/instagrampost.js > instagrampost.js ``` |
+
+
+## Facebook
+
+### Facebook Page 
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+
+### Response
+
+```http
+
+{
+  "results": [
+    {
+      "content": "<html> Facebook page content</html>"
+      "status_code": 200,
+      "url": "https://www.facebook.com/ladygaga",
+      "task_id": "6972452679540839425",
+      "created_at": "2022-09-05 07:17:40",
+      "updated_at": "2022-09-05 07:17:45"
+    }
+  ]
+}
+```
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/facebookpage.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/facebookpage.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/facebookpage.py > facebookpage.py ``` |
+| PHP                 | [php/facebookpage.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/facebookpage.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/facebookpage.php > facebookpage.php ``` |
+| Node.js                 | [nodejs/facebookpage.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/facebookpage.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/facebookpage.js > facebookpage.js ``` |
+
+
+### Facebook Post
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
+
+### Response
+
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> Facebook page content</html>"
+      "status_code": 200,
+      "url": "https://www.facebook.com/zuck/posts/pfbid0HeY54v4LMcv2EMxDz5RvnWaR6swsGFWikzUbrsEFtvxu9n4GCx7zA2YTM69XdiYnl",
+      "task_id": "6972484278999372801",
+      "created_at": "2022-09-05 09:23:14",
+      "updated_at": "2022-09-05 09:23:32"
+    }
+  ]
+}
+```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/facebookpost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/facebookpost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/facebookpost.py > facebookpost.py ``` |
+| PHP                 | [php/facebookpost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/facebookpost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/facebookpost.php > facebookpost.php ``` |
+| Node.js                 | [nodejs/facebookpost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/facebookpost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/facebookpost.js > facebookpost.js ``` |
+
+
+### Facebook Group
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+
+### Response
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> Facebook page content</html>"
+      "status_code": 200,
+      "url": "https://www.facebook.com/groups/1394454774138066",
+      "task_id": "6972486765374350337",
+      "created_at": "2022-09-05 09:33:07",
+      "updated_at": "2022-09-05 09:33:33"
+    }
+  ]
+}
+```
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/facebookgroup.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/facebookgroup.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/facebookgroup.py > facebookgroup.py ``` |
+| PHP                 | [php/facebookgroup.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/facebookgroup.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/facebookgroup.php > facebookgroup.php ``` |
+| Node.js                 | [nodejs/facebookgroup.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/facebookgroup.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/facebookgroup.js > facebookgroup.js ``` |
+
+## TikTok
+
+### TikTok Profile
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+
+### Response
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> TikTok page content</html>"
+      "status_code": 200,
+      "url": "https://www.tiktok.com/@soukainasing1",
+      "task_id": "6972490335716924417",
+      "created_at": "2022-09-05 09:47:18",
+      "updated_at": "2022-09-05 09:47:22"
+    }
+  ]
+}
+```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/tiktokprofile.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/tiktokprofile.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/tiktokprofile.py > tiktokprofile.py ``` |
+| PHP                 | [php/tiktokprofile.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/tiktokprofile.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/tiktokprofile.php > tiktokprofile.php ``` |
+| Node.js                 | [nodejs/tiktokprofile.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/tiktokprofile.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/tiktokprofile.js > tiktokprofile.js ``` |
+
+### TikTok Post
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> TikTok page content</html>"
+      "status_code": 200,
+      "url": "https://www.tiktok.com/@soukainasing1/video/7139227399035571462",
+      "task_id": "6972492376870795265",
+      "created_at": "2022-09-05 09:55:25",
+      "updated_at": "2022-09-05 09:55:29"
+    }
+  ]
+}
+```
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/tiktokpost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/tiktokpost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/tiktokpost.py > tiktokpost.py ``` |
+| PHP                 | [php/tiktokpost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/tiktokpost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/tiktokpost.php > tiktokpost.php ``` |
+| Node.js                 | [nodejs/tiktokpost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/tiktokpost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/tiktokpost.js > tiktokpost.js ``` |
+
 
 ## License
 
