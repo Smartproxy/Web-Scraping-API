@@ -7,6 +7,7 @@
 - [Instagram](#instagram)
 - [Facebook](#facebook)
 - [TikTok](#tiktok)
+- [Parameters](#parameters)
 - [License](#license)
 
 ## Introduction
@@ -319,6 +320,17 @@ Required parameters: ```url```
 | Python                  | [python/tiktokpost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/tiktokpost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/tiktokpost.py > tiktokpost.py ``` |
 | PHP                 | [php/tiktokpost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/tiktokpost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/tiktokpost.php > tiktokpost.php ``` |
 | Node.js                 | [nodejs/tiktokpost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/tiktokpost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/tiktokpost.js > tiktokpost.js ``` |
+
+## Parameters
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `target` | `string` |  Data source. Available targets are listed [here](#targets). |
+| `url` | `url` | Direct URL (link) |
+| `locale` | `string` | This will change the web interface language. Example: – en-US – en-GB |
+| `geo` | `string` | The geographical location that the result depends on. City location names, state names, country names, coordinates and radius, Google’s Canonical |
+| `device_type` | `string` | Device type and browser. Supported: ```desktop```, ```desktop_chrome```, ```desktop_firefox```, ```mobile```, ```mobile_android```, ```mobile_ios```. |
+| `headless` | `string` | Enable JavaScript rendering. Supported: ```html```, ```png``` |
 
 
 ## License
