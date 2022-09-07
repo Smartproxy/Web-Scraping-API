@@ -7,6 +7,7 @@
 - [Instagram](#instagram)
 - [Facebook](#facebook)
 - [TikTok](#tiktok)
+- [Twitter](#twitter)
 - [Parameters](#parameters)
 - [License](#license)
 
@@ -320,6 +321,79 @@ Required parameters: ```url```
 | Python                  | [python/tiktokpost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/tiktokpost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/tiktokpost.py > tiktokpost.py ``` |
 | PHP                 | [php/tiktokpost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/tiktokpost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/tiktokpost.php > tiktokpost.php ``` |
 | Node.js                 | [nodejs/tiktokpost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/tiktokpost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/tiktokpost.js > tiktokpost.js ``` |
+
+## Twitter
+
+### Twitter Profile
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
+| `device_type` | `string` | Device type - ```desktop``` |
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> Twitter page content</html>"
+      "status_code": 200,
+      "url": "https://twitter.com/elonmusk",
+      "task_id": "6973191788077014017",
+      "created_at": "2022-09-07 08:14:37",
+      "updated_at": "2022-09-07 08:15:02"
+    }
+  ]
+}
+```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/twitterprofile.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/twitterprofile.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/twitterprofile.py > twitterprofile.py ``` |
+| PHP                 | [php/twitterprofile.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/twitterprofile.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/twitterprofile.php > twitterprofile.php ``` |
+| Node.js                 | [nodejs/twitterprofile.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/twitterprofile.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/twitterprofile.js > twitterprofile.js ``` |
+
+### Twitter Post
+
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
+| `device_type` | `string` | Device type - ```desktop``` |
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> Twitter page content</html>"
+      "status_code": 200,
+      "url": "https://twitter.com/elonmusk/status/1552317587694010368?cxt=HHwWgIC-keOn-IorAAAA",
+      "task_id": "6973211115165632513",
+      "created_at": "2022-09-07 09:31:25",
+      "updated_at": "2022-09-07 09:31:55"
+    }
+  ]
+}
+```
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/twitterpost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/twitterpost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/twitterpost.py > twitterpost.py ``` |
+| PHP                 | [php/twitterpost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/twitterpost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/twitterpost.php > twitterpost.php ``` |
+| Node.js                 | [nodejs/twitterpost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/twitterpost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/twitterpost.js > twitterpost.js ``` |
+
 
 ## Parameters
 
