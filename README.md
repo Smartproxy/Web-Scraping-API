@@ -8,6 +8,7 @@
 - [Facebook](#facebook)
 - [TikTok](#tiktok)
 - [Twitter](#twitter)
+- [Reddit](#reddit)
 - [Parameters](#parameters)
 - [License](#license)
 
@@ -393,6 +394,116 @@ Required parameters: ```url```
 | Python                  | [python/twitterpost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/twitterpost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/twitterpost.py > twitterpost.py ``` |
 | PHP                 | [php/twitterpost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/twitterpost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/twitterpost.php > twitterpost.php ``` |
 | Node.js                 | [nodejs/twitterpost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/twitterpost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/twitterpost.js > twitterpost.js ``` |
+
+## Reddit
+
+### Reddit Subreddit
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
+| `device_type` | `string` | Device type - ```desktop``` |
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> Reddit page content</html>"
+      "status_code": 200,
+      "url": "https://www.reddit.com/r/aww/",
+      "task_id": "6980476706670814209",
+      "created_at": "2022-09-27 10:42:17",
+      "updated_at": "2022-09-27 10:42:44"
+    }
+  ]
+}
+```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/redditsubreddit.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/redditsubreddit.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/redditsubreddit.py > redditsubreddit.py ``` |
+| PHP                 | [php/redditsubreddit.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/redditsubreddit.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/redditsubreddit.php > redditsubreddit.php ``` |
+| Node.js                 | [nodejs/redditsubreddit.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/redditsubreddit.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/redditsubreddit.js > redditsubreddit.js ``` |
+
+
+### Reddit Post
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
+| `device_type` | `string` | Device type - ```desktop``` |
+
+
+```http
+{
+  "results": [
+    {
+      "content": "<html> Reddit page content</html>"
+      "status_code": 200,
+      "url": "https://www.reddit.com/r/aww/comments/xp1vg6/started_a_video_of_my_wobbly_foster_kitten/",
+      "task_id": "6980480650432246785",
+      "created_at": "2022-09-27 10:57:58",
+      "updated_at": "2022-09-27 10:58:26"
+    }
+  ]
+}
+```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/redditpost.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/redditpost.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/redditpost.py > redditpost.py ``` |
+| PHP                 | [php/redditpost.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/redditpost.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/redditpost.php > redditpost.php ``` |
+| Node.js                 | [nodejs/redditpost.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/redditpost.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/redditpost.js > redditpost.js ``` |
+
+### Reddit User
+
+### Target: ```universal``` (not parseable)
+Required parameters: ```url``` 
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `url` |  Target URL |
+| `target` | `string` | Scraping target - ```universal``` |
+| `headless` | `string` | Javascript rendering - ```html``` |
+| `device_type` | `string` | Device type - ```desktop``` |
+
+```http
+{
+  "results": [
+    {
+      "content": "Reddit page content"
+      "status_code": 200,
+      "url": "https://www.reddit.com/user/thegoldinthemountain/",
+      "task_id": "6980481799252129793",
+      "created_at": "2022-09-27 11:02:32",
+      "updated_at": "2022-09-27 11:03:00"
+    }
+  ]
+}
+```
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/reddituser.py](https://github.com/Smartproxy/Web-Scraping-API/blob/main/python/reddituser.py) |``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/python/reddituser.py > reddituser.py ``` |
+| PHP                 | [php/reddituser.php](https://github.com/Smartproxy/Web-Scraping-API/blob/main/php/reddituser.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/php/reddituser.php > reddituser.php ``` |
+| Node.js                 | [nodejs/reddituser.js](https://github.com/Smartproxy/Web-Scraping-API/blob/main/nodejs/reddituser.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/Web-Scraping-API/main/nodejs/reddituser.js > reddituser.js ``` |
+
 
 
 ## Parameters
