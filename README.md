@@ -10,6 +10,7 @@
 - [Twitter](#twitter)
 - [Reddit](#reddit)
 - [Parameters](#parameters)
+- [Response Codes](#response-codes)
 - [License](#license)
 
 ## Introduction
@@ -517,6 +518,21 @@ Required parameters: ```url```
 | `device_type` | `string` | Device type and browser. Supported: ```desktop```, ```desktop_chrome```, ```desktop_firefox```, ```mobile```, ```mobile_android```, ```mobile_ios```. |
 | `headless` | `string` | Enable JavaScript rendering. Supported: ```html```, ```png``` |
 
+## Response Codes
+
+### HTTP Response Codes
+
+| Response | Description     | Solution                |
+| :-------- | :------- | :------------------------- |
+| **200** - Success | Server has replied and given requested response.	 | Celebrate! |
+| **204** - No content | Job not completed yet. | Wait a few seconds before trying again. |
+| **400** - Multiple error messages | Bad structure of the request. | Re-check your request to make sure it is in the correct format. |
+| **401** - Invalid / not provided authorization header (client not found) | Incorrect login credentials or missing authorization. | Re-check your provided credentials for authorization. |
+| **403** - Forbidden | Your account does not have access to this resource. | Make sure the target is supported by us |
+| **404** - Not found | Your target was not found. | Re-check your targeted URL. |
+| **429** - Too many requests | Exceeded rate limit for your subscription. | Make sure you still have at least one request left. Wait a couple minutes and try again. If you are encountering the error often – chat with us to see if your rate limit can be increased. |
+| **500** - Internal error | Service unavailable, possibly due to some issues we are encountering. | Wait a couple minutes and send another request. Contact us for more information. |
+| **524** - Timeout | Service unavailable, possibly due to some issues we are encountering. | Wait a couple minutes and send another request. Contact us for more information. |
 
 ## License
 
