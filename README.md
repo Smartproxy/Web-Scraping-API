@@ -536,4 +536,5 @@ Required parameters: ```url```
 
 ## License
 
+
 All code is released under [MIT License](https://github.com/Smartproxy/Smartproxy/blob/master/LICENSE)
