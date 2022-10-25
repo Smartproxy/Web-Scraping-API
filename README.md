@@ -1,6 +1,6 @@
 # Web-Scraping-API
 
-[<img src="https://ibb.co/cDwSfVZ">](https://cutt.ly/XNofEYh)
+[<img src="https://i.ibb.co/PwMvX0P/Web.png">](https://cutt.ly/XNofEYh)
 
 ## List of contents
 - [Introduction](#introduction)
