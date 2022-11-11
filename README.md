@@ -1,6 +1,6 @@
 # Web-Scraping-API
 
-[<img src="https://i.ibb.co/PwMvX0P/Web.png">](https://cutt.ly/XNofEYh)
+[<img src="https://i.ibb.co/PwMvX0P/Web.png">](https://dashboard.smartproxy.com/register?utm_source=Github&utm_medium=banner&utm_campaign=Web)
 
 ## List of contents
 - [Introduction](#introduction)
