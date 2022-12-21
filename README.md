@@ -513,7 +513,7 @@ Required parameters: ```url```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `target` | `string` |  Data source. Available targets are listed [here](#targets). |
+| `target` | `string` |  Data source. (universal) |
 | `url` | `url` | Direct URL (link) |
 | `locale` | `string` | This will change the web interface language. Example: – en-US – en-GB |
 | `geo` | `string` | The geographical location that the result depends on. Full Country names required |
