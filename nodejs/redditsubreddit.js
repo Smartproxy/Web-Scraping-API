@@ -1,11 +1,24 @@
-const sdk = require('api')('@smartproxy/v1.0#25e7913l1ow524w');
+const request = require('request');
 
-sdk.auth('SPusername', 'SPpassword');
-sdk.realTimeExample({
-  target: 'universal',
-  parse: false,
-  url: 'https://www.reddit.com/r/aww/',
-  headless: 'html'
-})
-  .then(res => console.log(res))
-  .catch(err => console.error(err));
+const username = 'YOUR_USERNAME';
+const password = 'YOUR_PASSWORD';
+
+const options = {
+  method: 'POST',
+  url: 'https://scrape.smartproxy.com/v1/tasks',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Basic ' + Buffer.from(username + ':' + password).toString('base64')
+  },
+  body: JSON.stringify({
+    target: 'universal',
+    parse: false,
+    url: 'https://www.reddit.com/r/aww/'
+  })
+};
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
