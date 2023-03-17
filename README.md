@@ -73,9 +73,10 @@ Required parameters: ```url``` (ip.smartproxy.com in this example)
 
 **Not seeing the results you wanted?**
 
-Try enabling JavaScript rendering using the ```headless``` parameter.
+Try enabling JavaScript rendering using the ```headless``` parameter. - [Parameters](#parameters)
 
-This parameter renders JavaScript on the target website making more data available for scraping.
+This parameter renders JavaScript on the target website making more data available for scraping. 
+
 
 ## Facebook
 
