@@ -16,7 +16,7 @@
 
 ## Introduction
 
-With our Web Scraping API, you can scrape various websites en masse.
+With [our Web Scraping API](https://smartproxy.com/scraping/web), you can scrape various websites en masse.
 
 ## Authentication
 
