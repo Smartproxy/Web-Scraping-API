@@ -10,7 +10,7 @@ payload = {
 headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "Authorization": "Basic U1B1c2VybmFtZTpTUHBhc3N3b3Jk"
+    "Authorization": "Basic AUTH"
 }
 
 response = requests.post(url, json=payload, headers=headers)
