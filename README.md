@@ -29,10 +29,10 @@ Note that this is only an example with preset values to get you on the right tra
 
 ### You can use universal parameter as your target and supply any URL you want, which will return the HTML of the targeted URL.
 
-API Link: https://scrape.smartproxy.com/v1/tasks
+API Link: https://scraper-api.smartproxy.com/v2/scrape
 
 ```http
-  POST /tasks
+  POST /scrape
 ```
 
 ### Target: ```universal``` (not parseable)
