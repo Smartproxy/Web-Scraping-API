@@ -1,6 +1,6 @@
 import requests
 
-url = "https://scrape.smartproxy.com/v1/tasks"
+url = "https://scraper-api.smartproxy.com/v2/scrape"
 
 payload = {
     "target": "universal",
