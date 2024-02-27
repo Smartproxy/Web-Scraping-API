@@ -1,6 +1,8 @@
 # Web Scraping API
 
-[<img src="https://i.ibb.co/Qj2bpCm/Web-1.png">](https://dashboard.smartproxy.com/register?utm_source=Github&utm_medium=banner&utm_campaign=Web)
+<p align="center">
+    <a href="https://dashboard.smartproxy.com/register?page=web-scraping-api%2Fpricing&utm_source=socialorganic&utm_medium=social&utm_campaign=github_website_scraper" ><img src="https://i.imgur.com/v4Z5CXu.png"></a>
+</p> 
 
 ## List of contents
 - [Introduction](#introduction)
