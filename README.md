@@ -4,6 +4,8 @@
     <a href="https://dashboard.smartproxy.com/register?page=web-scraping-api%2Fpricing&utm_source=socialorganic&utm_medium=social&utm_campaign=github_website_scraper" ><img src="https://i.imgur.com/v4Z5CXu.png"></a>
 </p> 
 
+[![](https://dcbadge.vercel.app/api/server/gvJhWJPaB4)](https://discord.gg/sCr34yVDVB)
+
 ## List of contents
 - [Introduction](#introduction)
 - [Authentication](#authentication)
